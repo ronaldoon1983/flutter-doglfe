@@ -26,10 +26,9 @@ class LoginPage extends StatelessWidget {
               height: 20,
             ),
             TextFormField(
-              autofocus: true,
+              //autofocus: true,
               keyboardType: TextInputType.emailAddress,
                decoration: InputDecoration(
-                 focusedBorder: UnderlineInputBorder(borderSide: BorderSide(color: Color.fromRGBO(148, 0, 211, 10,))),
                 fillColor: Colors.amber,
                 labelText: "Email:",
                 labelStyle: TextStyle(
@@ -45,28 +44,53 @@ class LoginPage extends StatelessWidget {
                 ),
             ),
             SizedBox(
-              height: 10,
+              height: 30,
             ),
+
             TextFormField(
-              
+              style: TextStyle(
+                color: Colors.white
+              ),
               autofocus: true,
-              keyboardType: TextInputType.text,
+              keyboardType: TextInputType.visiblePassword,
               obscureText: true,
               decoration: InputDecoration(
-              focusedBorder: UnderlineInputBorder(borderSide: BorderSide(color: Color.fromRGBO(148, 0, 211, 10,))),  
+                border: OutlineInputBorder(borderRadius: BorderRadius.circular(30.0)),
+                hintStyle: TextStyle(
+                  color: Colors.white54,
+                  fontSize: 10,
+                ),
+                hintText: "Digite:",
+                
+                
+                prefix: Container(
+                  width: 36,
+                  height: 15,
+                  margin: const EdgeInsets.only(right: 8.0),
+                  padding: const EdgeInsets.all(8.0),
+                  decoration: const BoxDecoration(
+                    border: Border(
+                      right: BorderSide(width: 1.0, color: Colors.white),
+                    )
+                  ),
+                ),
                 labelText: "Senha:",
+                //labelStyle: 
                 labelStyle: TextStyle(
-                  color: Colors.white,
-                  fontWeight: FontWeight.w100,
-                  fontSize: 20,
+                 color: Colors.white,
+                
+                   
+                 ),
+                  //fontWeight: FontWeight.w100,
+                  //fontSize: 20,
                   
                   )
               ),
-              style: TextStyle(
-	      fontSize: 20,
-        color: Colors.white,
-        ),
-        ),
+              //style: TextStyle(
+	      //fontSize: 20,
+        //color: Colors.white,
+ //       ),
+ //       ),
 
             ],
          )
