@@ -1,5 +1,5 @@
 import 'package:doglife/pages/login.page.dart';
-import 'package:doglife/pages/reset-password.page.dart';
+//import 'package:doglife/pages/reset-password.page.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
